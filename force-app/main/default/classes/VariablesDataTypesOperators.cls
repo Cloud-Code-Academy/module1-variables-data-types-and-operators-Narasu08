@@ -31,8 +31,10 @@ public with sharing class VariablesDataTypesOperators {
      * @param b The second number.
      * @return The sum of the two numbers, or null if either number is null.
      */
-    public static Integer addition(Integer a, Integer b) {  
-        return null; // Replace null with the variable you used to store the result
+    public static Integer addition(Integer a, Integer b) { 
+        Integer c;
+        c = a+ b;
+        return c; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -44,7 +46,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer c;
+        c = a - b;
+        return c; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -56,7 +60,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer c;
+        c = a * b;
+        return c; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -69,7 +75,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer c;
+        c = a/b;
+        return c; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -83,7 +91,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        Boolean result;
+        result = math.mod(num, 2)==0;
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -94,7 +104,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        boolean result;
+        result = num>0;
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -106,7 +118,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
+        String result;
+        result = str1 + str2;
+        return result; // Replace null with the variable you used to store the result
     }
 
 	/**
@@ -121,7 +135,11 @@ public with sharing class VariablesDataTypesOperators {
 	 * @return The complete sentence as a single String.
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
-		return null; // Replace null with the variable you used to store the result
+        String result;
+        result = noun +' ' + 'cat'+ ' ' + verb + ' ' + 'jumping' + endingPunctuation;
+		system.debug(result);
+        return result; // Replace null with the variable you used to store the result
+        
 	}
 
     /**
