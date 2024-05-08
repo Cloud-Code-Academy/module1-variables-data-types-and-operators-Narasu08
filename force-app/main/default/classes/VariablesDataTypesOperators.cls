@@ -74,9 +74,14 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
-        Integer result;
-        result = a/b;
-        return result; // Replace null with the variable you used to store the result
+        Decimal result;
+        if(b!= 0){
+            result = a/b;
+        }else{
+            result = 0;
+        }
+        return result;
+         // Replace null with the variable you used to store the result
     }
 
     /**
@@ -135,7 +140,7 @@ public with sharing class VariablesDataTypesOperators {
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
         String result;
-        result = noun +' ' + 'cat'+ ' ' + verb + ' ' + 'jumping' + endingPunctuation;
+        result = 'The ' + noun + ' is ' + verb + endingPunctuation;
 		system.debug(result);
         return result; // Replace null with the variable you used to store the result
         
